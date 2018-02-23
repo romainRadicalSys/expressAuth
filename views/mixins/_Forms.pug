@@ -1,0 +1,16 @@
+mixin formSignup
+    h1 Please Sign up
+    form(action="/signup" method='POST' class='signup--form')
+        .form-group
+            label(for="username") Username
+            input(type="text" id='username' placeholder='Type your username')
+        .form-group
+            label(for="email") Email
+            input(type="text" id='email' placeholder='Type your e-mail')
+        .form-group
+            label(for="password") Password
+            input(type="password" id='password' placeholder='password')
+        .form-group
+            label(for="confPassword") Confirm Password
+            input(type="password" id='confPassword' placeholder='password')
+        
